@@ -1,6 +1,6 @@
 import React from "react"
 import "./login.css"
-import  back from '../../resources/images/tent.jpg'
+import  back from '../../resources/images/products/tent.jpg'
 import { useDispatch } from "react-redux"
 import { authActions } from "../../Store/authSlice"
 

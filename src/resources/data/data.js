@@ -1,3 +1,4 @@
+
 export const slide = [
     { image: "../images/slide/slide1.png" },
     { image: "../images/slide/slide2.png" },

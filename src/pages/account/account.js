@@ -1,5 +1,5 @@
 import React from "react"
-import image from "../../resources/images/tent.jpg"
+import image from "../../resources/images/products/tent.jpg"
 import "./account.css"
 
 export const Account = () => {
