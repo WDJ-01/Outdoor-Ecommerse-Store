@@ -3,10 +3,10 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-   entry: ['./src/index.js', './public/images'],
   output: {
     path: path.join(__dirname, "/dist"), 
     filename: "bundle.js", 
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -31,7 +31,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+        test: /\.(woff|woff2|eot|ttf|svg)$/, 
         loader: "url-loader",
         options: { limit: false },
       },
@@ -40,6 +40,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'static/[hash][ext][query]'
+        }
       },
 
     ],

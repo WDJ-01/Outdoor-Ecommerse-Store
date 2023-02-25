@@ -7,7 +7,7 @@ import { BiLogOut } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { authActions } from "../../Store/authSlice"
-import users from '../../resources/images/users.png'
+import users from '../../resources/images/tent.jpg'
 
 export const User = () => {
   const user = true
