@@ -6,6 +6,7 @@ import { cartActions } from "../../Store/cartSlice"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 
 
+
 export const ProductCart = ({ id, cover, name, price, desc }) => {
   const dispatch = useDispatch()
   const addToCart = () => {
@@ -16,7 +17,7 @@ export const ProductCart = ({ id, cover, name, price, desc }) => {
       <div className='box boxItems' id='product'>
         <div className='img'>
           <Link >
-            <LazyLoadImage src={cover} alt='cover' />
+            <LazyLoadImage src={require("../../resources/images/products/" + cover + ".jpg")} alt='cover' />
           </Link>
         </div>
         <div className='details'>

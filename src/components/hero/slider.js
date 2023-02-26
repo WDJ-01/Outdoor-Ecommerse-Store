@@ -10,7 +10,11 @@ export const Slider = () => {
           {slide.map((item, i) => (
             <div className="box" key={i}>
               <div className="img">
-                <img src={item.image} alt="" />
+                <img
+                  src={require("../../resources/images/slide/" +
+                    item.image + ".png")}
+                  alt=""
+                />
               </div>
             </div>
           ))}

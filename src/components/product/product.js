@@ -8,7 +8,7 @@ export const Product = () => {
     <>
       <section className="product">
         <div className="container grid3">
-          {products.map(
+          { products.map(
             (item) => (
               console.log(item.cover),
               (

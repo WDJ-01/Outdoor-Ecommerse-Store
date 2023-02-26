@@ -1,9 +1,9 @@
 
 export const slide = [
-    { image: "../images/slide/slide1.png" },
-    { image: "../images/slide/slide2.png" },
-    { image: "../images/slide/slide3.png" },
-    { image: "../images/slide/slide4.png" },
+    { image: "slide1" },
+    { image: "slide2" },
+    { image: "slide3" },
+    { image: "slide4" },
   ];
   
   export const order = [
@@ -36,7 +36,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "Fishing",
-      cover: "../images/products/fishingrod.jpg",
+      cover: "fishingrod",
       desc: "2 piece 8' graphite rod. Suitable for salt and freash water.",
     },
     {
@@ -45,7 +45,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "Camping",
-      cover: "../images/products/tent.jpg",
+      cover: "tent",
       desc: "2 man tent, easy setup, water and wind proof.",
     },
     {
@@ -54,7 +54,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "hiking",
-      cover: "../images/products/hikingboots.jpg",
+      cover: "hikingboots",
       desc: "High top hiking boots. Provide ankle and bridge support. Waterproof.",
     },
     {
@@ -63,7 +63,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "fishing",
-      cover: "../images/products/fishingreel.jpg",
+      cover: "fishingreel",
       desc: "High quality fish reel with precision ball bearings and 30lb braided line.",
     },
     {
@@ -72,7 +72,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "camping",
-      cover: "../images/products/campingchair.jpg",
+      cover: "campingchair",
       desc: "Foldable camping chair with cupholder. Max weight of 120kg.",
     },
     {
@@ -81,7 +81,7 @@ export const slide = [
       price: 50,
       qty: 1,
       category: "hiking",
-      cover: "../images/products/pack.jpg",
+      cover: "pack",
       desc: "Waterproof hiking pack with 4 compartments and water bottle pocket.",
     },
   ];
