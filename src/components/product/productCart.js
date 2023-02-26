@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { cartActions } from "../../Store/cartSlice"
 import { LazyLoadImage } from "react-lazy-load-image-component"
-import {getProductImageByKey} from '../../utils/productUtils'
 
 export const ProductCart = ({ id, cover, name, price, desc }) => {
   const dispatch = useDispatch()
@@ -16,7 +15,7 @@ export const ProductCart = ({ id, cover, name, price, desc }) => {
       <div className='box boxItems' id='product'>
         <div className='img'>
           <Link >
-            <LazyLoadImage src={getProductImageByKey(cover)} alt='cover' />
+            <LazyLoadImage src={cover} alt='cover' />
           </Link>
         </div>
         <div className='details'>

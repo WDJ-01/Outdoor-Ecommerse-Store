@@ -3,10 +3,20 @@ var webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: {
+    index: {
+      import: "./src/index.js",
+      dependOn: "shared",
+    },
+    another: {
+      import: "./public/images/products",
+      dependOn: "shared",
+    },
+  },
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "bundle.js",
-  },
+    filename: '[name].bundle.js' 
+   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
@@ -18,8 +28,8 @@ module.exports = {
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-},
+    maxAssetSize: 512000,
+  },
   module: {
     rules: [
       {
@@ -37,13 +47,13 @@ module.exports = {
         test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/images/'
-            }
-          }
-        ]
+              name: "[name].[ext]",
+              outputPath: "assets/images/",
+            },
+          },
+        ],
       },
     ],
   },
