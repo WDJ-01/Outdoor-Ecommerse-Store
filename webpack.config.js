@@ -3,19 +3,9 @@ var webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    another: {
-      import: "./public/images/products",
-      dependOn: "shared",
-    },
-  },
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: '[name].bundle.js' 
+    filename: 'bundle.js' 
    },
   plugins: [
     new HtmlWebpackPlugin({
