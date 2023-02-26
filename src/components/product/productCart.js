@@ -23,7 +23,7 @@ export const ProductCart = ({ id, cover, name, price, desc }) => {
         <div className="img">
           <Link>
             <LazyLoadImage
-              src={require(`../../resources/images/products/${cover}`).default}
+              src={cover}
               alt="cover"
             />
           </Link>
