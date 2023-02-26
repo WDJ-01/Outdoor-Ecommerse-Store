@@ -15,7 +15,7 @@ export const Product = () => {
                 <ProductCart
                   key={item.id}
                   id={item.id}
-                  cover={require(`../../resources/images/products/${item.cover}`)}
+                  cover={require(`../../resources/images/products/${item.cover}`).default}
                   name={item.name}
                   price={item.price}
                   desc={item.desc}
