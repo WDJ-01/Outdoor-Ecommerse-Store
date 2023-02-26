@@ -35,11 +35,21 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
-        loader: require.resolve('url-loader'),
-        options: {
-          limit: 10000,
-          name: "static/media/[name].[hash:8].[ext]",
-        },
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/'
+            }
+          }
+        ]
+      },
+      {
+        test:/\.html$/,
+        use: [
+          'html-loader'
+        ]
       },
     ],
   },

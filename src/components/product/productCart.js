@@ -17,7 +17,7 @@ export const ProductCart = ({ id, cover, name, price, desc }) => {
       <div className='box boxItems' id='product'>
         <div className='img'>
           <Link >
-            <LazyLoadImage src={require("../../resources/images/products/" + cover + ".jpg")} alt='cover' />
+            <LazyLoadImage src={cover} alt='cover' />
           </Link>
         </div>
         <div className='details'>
