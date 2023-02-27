@@ -11,7 +11,7 @@ export const Slider = () => {
             <div className="box" key={i}>
               <div className="img">
                 <img
-                  src={item.image}
+                  src={require(`../../resources/images/slide/${item.image}`).default}
                   alt=""
                 />
               </div>

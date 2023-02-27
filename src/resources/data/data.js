@@ -1,9 +1,9 @@
 
 export const slide = [
-    { image: "../images/slide/slide1.png" },
-    { image: "../images/slide/slide2.png" },
-    { image: "../images/slide/slide3.png" },
-    { image: "../images/slide/slide4.png" },
+    { image: "slide1.png" },
+    { image: "slide2.png" },
+    { image: "slide3.png" },
+    { image: "slide4.png" },
   ];
   
   export const order = [
