@@ -20,8 +20,10 @@ export const Header = () => {
         <div className='scontainer flex'>
           <div className='logo'>
             <Link to='/'>
-              <GiPlantsAndAnimals style={{color:"darkgreen", fontSize: '4rem', marginLeft:'2rem'}}/>
-              {/* <h1>Outdoor House</h1> */}
+              Home
+            </Link>
+            <Link to='/product'>
+              Products
             </Link>
           </div>
           <div className='search flex'>

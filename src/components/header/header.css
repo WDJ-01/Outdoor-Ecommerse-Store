@@ -5,17 +5,22 @@ header {
     position: relative;
     z-index: 44;
   }
-  /* .logo{
+  .logo{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
   }
 
-  .logo h1 {
-    font-size: 1.5rem;
+  .logo a {
     text-decoration: none;
-    color: grey
-  } */
+    font-size: 1.rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    color: #000;
+  }
+
+
   .search {
     border: 2px solid #212121;
     border-radius: 6px;

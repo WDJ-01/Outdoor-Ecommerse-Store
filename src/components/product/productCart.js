@@ -4,12 +4,8 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Store/cartSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import '../../resources/images/products/tent.jpg'
-import '../../resources/images/products/pack.jpg'
-import '../../resources/images/products/campingchair.jpg'
-import '../../resources/images/products/fishingreel.jpg'
-import '../../resources/images/products/hikingboots.jpg'
-import '../../resources/images/products/fishingrod.jpg'
+
+
 
 
 export const ProductCart = ({ id, cover, name, price, desc }) => {
@@ -21,7 +17,7 @@ export const ProductCart = ({ id, cover, name, price, desc }) => {
     <>
       <div className="box boxItems" id="product">
         <div className="img">
-          <Link>
+          <Link to ={`/product/${id}`}>  
             <LazyLoadImage
               src={cover}
               alt="cover"
