@@ -18,10 +18,7 @@ export const CartItems = ({ id, cover, name, price, quantity, totalPrice }) => {
         <div className="cartContent">
           <div className="img">
             <img
-              src={
-                require(`../../resources/images/products/${cover}`)
-                  .default
-              }
+              src={cover}
               alt=""
             />
             <button className="remove flexCenter">
